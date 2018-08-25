@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E2613EF821310C32007B45A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613EF721310C32007B45A8 /* AppDelegate.swift */; };
-		E2613EFA21310C32007B45A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613EF921310C32007B45A8 /* ViewController.swift */; };
 		E2613EFD21310C32007B45A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2613EFB21310C32007B45A8 /* Main.storyboard */; };
 		E2613F0021310C32007B45A8 /* Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2613EFE21310C32007B45A8 /* Expenses.xcdatamodeld */; };
 		E2613F0221310C32007B45A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2613F0121310C32007B45A8 /* Assets.xcassets */; };
 		E2613F0521310C32007B45A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2613F0321310C32007B45A8 /* LaunchScreen.storyboard */; };
 		E2613F1021310C33007B45A8 /* ExpensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613F0F21310C33007B45A8 /* ExpensesTests.swift */; };
 		E2613F1B21310C33007B45A8 /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613F1A21310C33007B45A8 /* ExpensesUITests.swift */; };
+		E2613F2921310DF5007B45A8 /* expensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613F2821310DF5007B45A8 /* expensesViewController.swift */; };
+		E2613F2B21311012007B45A8 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2613F2A21311012007B45A8 /* Expenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		E2613EF421310C32007B45A8 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2613EF721310C32007B45A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2613EF921310C32007B45A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2613EFC21310C32007B45A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2613EFF21310C32007B45A8 /* Expenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expenses.xcdatamodel; sourceTree = "<group>"; };
 		E2613F0121310C32007B45A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E2613F1621310C33007B45A8 /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2613F1A21310C33007B45A8 /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
 		E2613F1C21310C33007B45A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2613F2821310DF5007B45A8 /* expensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expensesViewController.swift; sourceTree = "<group>"; };
+		E2613F2A21311012007B45A8 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				E2613EF721310C32007B45A8 /* AppDelegate.swift */,
-				E2613EF921310C32007B45A8 /* ViewController.swift */,
+				E2613F2821310DF5007B45A8 /* expensesViewController.swift */,
 				E2613EFB21310C32007B45A8 /* Main.storyboard */,
 				E2613F0121310C32007B45A8 /* Assets.xcassets */,
 				E2613F0321310C32007B45A8 /* LaunchScreen.storyboard */,
 				E2613F0621310C32007B45A8 /* Info.plist */,
+				E2613F2A21311012007B45A8 /* Expenses.swift */,
 				E2613EFE21310C32007B45A8 /* Expenses.xcdatamodeld */,
 			);
 			path = Expenses;
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2613EFA21310C32007B45A8 /* ViewController.swift in Sources */,
+				E2613F2B21311012007B45A8 /* Expenses.swift in Sources */,
 				E2613F0021310C32007B45A8 /* Expenses.xcdatamodeld in Sources */,
 				E2613EF821310C32007B45A8 /* AppDelegate.swift in Sources */,
+				E2613F2921310DF5007B45A8 /* expensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
